@@ -1,0 +1,2 @@
+Merhaba
+Burası bash script ile yazdığımız script ile eklendi
