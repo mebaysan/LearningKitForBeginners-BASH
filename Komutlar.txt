@@ -1,0 +1,2 @@
+ls -lap -> bütün dosyaları izinleriyle birlitke verir
+man command -> o komutun açıklamalarını verir --> man ls
