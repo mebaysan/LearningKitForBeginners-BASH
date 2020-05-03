@@ -1,0 +1,66 @@
+i   -> editör bizden input almaya başlar
+
+esc -> esc ile tekrar komut moduna geçebiliriz
+
+:q  -> editörden çıkmak için kullanılır, fakat kaydetmediysek hata verecektir
+
+:q! -> çalıştığımız dosyayı/belgeyi kaydetmeden çıkmak için kullanılır
+
+:w  -> belgeyi kaydetmek için kullanılır (editörde kalır)
+
+:wq -> belgeyi kaydeder ve konsola döner. eğer kaydetmediysek :wq dosya_adi şeklinde kaydederek çıkabiliriz
+
+vim <file> -> dosyayı vim ile açar
+
+"...." -> üzerinde çalıştığımız dosyanın adı
+
+xL   -> x adet satır
+
+xC   -> x adet karakterden oluşmuş
+
+ZZ   -> esc basıldıktan sonra :ZZ diye değil, direk ZZ olarak kullanılır, belgeyi o anki haliyle kaydeder ve çıkar
+
+:x  -> vim'den çıkar, eğer dosya değişmiş ise kaydeder
+
+:r file_name  -> dosyayı okur ve imlecin olduğu yerden itibaren devamına ekler
+
+:!komut -> vim editör içerisinde konsol komutlarını kullanabilmemizi sağlar => :!ls
+
+:r !komut -> komut'un çıktısını imlecin olduğu yere ekler
+
+vim file_1 file_2 -> aynı anda 2 dosya açabiliriz
+
+:next -> file2'ye geçebiliriz
+
+:previous -> file1'e geçebiliriz
+
+:s/değişecek-kelime/değişen-kelime/g   -> bütün dosyadaki string değiştirmemizi sağlar
+
+:2,3s/değişecek-kelime/değişen-kelime/g  -> 2 ve 3. satırlardaki istenilen kelimeleri değiştirir
+
+vim +10 <file> -> ilgili dosyayı 10. satırda açar
+
+vim -R <file> -> ilgili dosyayı readyonly açar. :w! yaparak insert modda eklediğimiz verileri kaydederek çıkabiliriz
+
+vim -x <file> -> ilgili dosyayı şifreler ve açarken şifre ister
+
+:set nu   -> çalıştığımız dosyada satırları numaralandırmamızı sağlar
+
+:11    -> 11. satıra gider
+
+:set all  -> vim editörle ilgili tüm ayarları listeler
+
+/aranacak_kelime  -> imleç aranacak_kelime'nin yanına gider
+
+:set ic  -> arama yaparken büyük-küçük harf duyarlılığını kaldırır
+
+	i			bulunulan yerde yazma moduna geçer (i=insert)
+	I			satır başına gidip yazma moduna geçer (I=insert)
+	a			bir sonraki yerden bir karakter sağa kayıp yazma moduna geçer (a=append)
+	A			satır sonuna gidip yazma moduna geçer (A=append)
+	o			aşağıya yeni bir satır ekleyip yazma moduna geçer
+	O			yukarıya bir satır ekleyip yazma moduna geçer
+	<ESC>			yazma modundan çıkar
+
+
+dd  -> satır silmemizi sağlar
