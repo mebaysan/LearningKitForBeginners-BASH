@@ -14,6 +14,6 @@ parametreli(){
 }
 
 
-Merhaba()
-Selamla()
+Merhaba
+Selamla
 parametreli Baysan
